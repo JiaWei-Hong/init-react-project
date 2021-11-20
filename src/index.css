@@ -16,3 +16,28 @@ code {
   width: 100vw;
   position: fixed;
 }
+
+.slide-enter,
+.slide-exit {
+  transition: all 1000ms ease-out;
+}
+
+.slide-enter {
+  transform: translateX(100%);
+}
+
+.slide-enter.test-enter-active {
+  transform: translateX(0%);
+}
+
+.test-exit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: translateX(0%);
+}
+
+.slide-exit-active {
+  transform: translateX(-100%);
+}
