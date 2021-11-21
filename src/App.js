@@ -20,10 +20,12 @@ function App() {
         <CSSTransition
           key={location.pathname}
           classNames={{
+            appear: 'slide-none',
             enter: 'slide-enter',
             exit: 'slide-exit test-exit',
             enterActive: 'slide-enter test-enter-active',
-            exitActive: 'slide-enter slide-exit-active',
+            exitActive: 'slide-none',
+            exitDone: 'slide-enter slide-exit-active',
           }}
           timeout={1000}
         >

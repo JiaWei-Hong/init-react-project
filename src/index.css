@@ -17,6 +17,11 @@ code {
   position: fixed;
 }
 
+.slide-none{
+  opacity: 0;
+  transition: none !important;
+}
+
 .slide-enter,
 .slide-exit {
   transition: all 1000ms ease-out;
