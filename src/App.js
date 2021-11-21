@@ -28,8 +28,9 @@ function App() {
             exitDone: 'slide-enter slide-exit-active',
           }}
           timeout={1000}
+          onMountExit
         >
-          <Routes>
+          <Routes location={location}>
             <Route path={routes.home} element={<Home />} />
             <Route path={routes.test} element={<Test />} />
           </Routes>
